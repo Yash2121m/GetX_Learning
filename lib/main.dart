@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_learning/Getx_Utils/Language_Changing/languages.dart';
 
+import 'Getx_Utils/Counter_App_Getx/Counter_Screen.dart';
 import 'Getx_Utils/Language_Changing/localization_and_language_change.dart';
 import 'Getx_Utils/Navigation_using_Getx/navigation_getx_2.dart';
 import 'Getx_Utils/Navigation_using_Getx/navigation_getx_3.dart';
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
       translations: Languages(),
       locale: Locale('en', 'US'),
       fallbackLocale: Locale('en', 'US'),
-      home: LocalizationAndLanguageChange(),
+      home: CounterScreen(),
 
       // Routs Using Getx
       getPages: [
